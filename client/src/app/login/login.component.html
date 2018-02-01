@@ -1,0 +1,24 @@
+
+<div class="login">
+    <form #UserLogin="ngForm" (ngSubmit)="onSubmit(UserLogin)">
+           
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title>Login</mat-card-title>
+            <mat-card-subtitle>Enter your Username and Password to login to your Account</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+      <mat-form-field>
+        <input matInput placeholder="Username" name="username" ngModel required>
+      </mat-form-field>
+      <br/>
+      <mat-form-field>
+          <input matInput placeholder="Password" name="password" ngModel [type]="hide ? 'password' : 'text'">
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+        </mat-form-field>
+        <br/>
+        <button type="submit" mat-raised-button color="primary">LogIn</button>
+    </mat-card-content>
+    </mat-card>
+    </form>
+    </div>

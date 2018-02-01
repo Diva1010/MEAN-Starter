@@ -1,0 +1,10 @@
+.login{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+.errorMsg{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}

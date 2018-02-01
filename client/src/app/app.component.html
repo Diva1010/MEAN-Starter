@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>My MEAN App</span>
+
+    <span class="example-spacer"></span>
+    
+    <div routerLinkActive="active" [routerLink]="['/login']">
+      <button mat-button>Login</button>
+    </div>
+    <div routerLinkActive="active" [routerLink]="['/register']">
+      <button mat-button>Register</button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<br/>
+<router-outlet></router-outlet>
